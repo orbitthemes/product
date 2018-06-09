@@ -1,0 +1,50 @@
+/*
+Theme Name: Product - Your Product Landing Page Template
+Theme URI: https://www.orbitthemes.com
+Author: Sandeep Prasad Bhatt
+Author URI: http://www.sandeepbhatt.com.np
+Description: Starter - Bootstrap 4 simple starter template
+Create date: April 5, 2018
+Version: 1.0
+License: Commercial, All rights reserved - orbitthemes.com
+Tags: Product Landing Page, Responsive Bootstrap 4 template , bootstrap 4 starter template, bootstrap4 template, simple template
+Text Domain: orbitthemes.com
+*/
+
+#main {
+    background: $light;
+    #top-banner {
+        @include media-breakpoint-up(md) {
+            border: 15px solid $light-grey;
+        }
+        /*   * Dummy devices (replace them with your own or something else entirely!) */
+        .product-device {
+            position: absolute;
+            right: 10%;
+            bottom: -30%;
+            width: 300px;
+            height: 540px;
+            background-color: $light-black;
+            border-radius: 21px;
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+            &::before {
+                position: absolute;
+                top: 10%;
+                right: 10px;
+                bottom: 10%;
+                left: 10px;
+                content: "";
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+            }
+        }
+        .product-device-2 {
+            top: -25%;
+            right: auto;
+            bottom: 0;
+            left: 5%;
+            background-color: #e5e5e5;
+        }
+    }
+}
